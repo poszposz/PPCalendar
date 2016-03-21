@@ -13,6 +13,7 @@ class FOOCell: PPCalendarCell {
     @IBOutlet var dayLabel : UILabel!
     
     override func awakeFromNib() {
+        self.backgroundColor = UIColor.clearColor()
         dayLabel.clipsToBounds = true
         dayLabel.layer.borderColor = UIColor.lightGrayColor().CGColor
         dayLabel.layer.borderWidth = 2.0

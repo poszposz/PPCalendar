@@ -38,6 +38,9 @@ extension ViewController : PPCalendarViewDataSource {
     
     func PPCalendar(calendar calendarView: PPCalendarView, customizedCell cell: PPCalendarCell, forItemWithDate date: NSDate) -> PPCalendarCell {
         let fooCell = cell as! FOOCell
+        fooCell.selectionHandler = {(cell, date) in
+            // do any animation you want
+        }
         fooCell.loadWithDate(date)
         return cell
     }

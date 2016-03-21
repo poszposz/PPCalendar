@@ -103,7 +103,9 @@ extension PPCalendarPage : UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let cell = collectionView.cellForItemAtIndexPath(indexPath) as! PPCalendarCell
-        delegate?.PPPage(didSelectCell: cell, withDate: calculateDateAtIndexPath(indexPath))
+        let selectedDate = calculateDateAtIndexPath(indexPath)
+        cell.selectionHandler!(cell, selectedDate)
+        delegate?.PPPage(didSelectCell: cell, withDate: selectedDate)
     }
 }
 

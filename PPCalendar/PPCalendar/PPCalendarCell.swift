@@ -9,6 +9,8 @@
 import UIKit
 
 class PPCalendarCell: UICollectionViewCell {
+    
+    var selectionHandler: ((PPCalendarCell, NSDate) -> ())?
 
     var inCurrentMonth = true
     var selectionEnabled : Bool?
