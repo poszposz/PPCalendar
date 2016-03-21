@@ -3,7 +3,7 @@
 //  PPCalendar
 //
 //  Created by Jan Posz on 17.03.2016.
-//  Copyright © 2016 Woolet. All rights reserved.
+//  Copyright © 2016 Jan Posz. All rights reserved.
 //
 
 import Foundation
@@ -88,5 +88,12 @@ extension NSDate {
         components.month = month
         components.year = year
         return NSCalendar.currentCalendar().dateFromComponents(components)!
+    }
+    
+    //TODO: remove this
+    func stringValue() -> String {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "MMMM yyyy"
+        return formatter.stringFromDate(self)
     }
 }

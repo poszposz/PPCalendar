@@ -3,7 +3,7 @@
 //  PPCalendar
 //
 //  Created by Jan Posz on 17.03.2016.
-//  Copyright © 2016 Woolet. All rights reserved.
+//  Copyright © 2016 Jan Posz. All rights reserved.
 //
 
 import Foundation

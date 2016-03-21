@@ -3,7 +3,7 @@
 //  PPCalendar
 //
 //  Created by Jan Posz on 17.03.2016.
-//  Copyright © 2016 Woolet. All rights reserved.
+//  Copyright © 2016 Jan Posz. All rights reserved.
 //
 
 import UIKit
@@ -38,18 +38,18 @@ extension ViewController : PPCalendarViewDataSource {
     
     func PPCalendar(calendar calendarView: PPCalendarView, customizedCell cell: PPCalendarCell, forItemWithDate date: NSDate) -> PPCalendarCell {
         let fooCell = cell as! FOOCell
-        fooCell.dayLabel.text = "\(date.day())"
-        fooCell.dayLabel.layer.masksToBounds = true
-        fooCell.dayLabel.layer.cornerRadius = fooCell.dayLabel.frame.size.width / 2.0
-        return fooCell
+        fooCell.loadWithDate(date)
+        return cell
     }
     
     func PPCalendar(calendar calendarView: PPCalendarView, headerForMonth month: Int, inYear year: Int) -> PPCalendarHeader? {
-        return PPCalendarHeader.defaultHeaderWithDate(NSDate.dateWith(year: year, month: month, day: 1), innerFrame: CGRectMake(0, 0, calendar.view.frame.size.width, 40.0), textColor: UIColor.whiteColor(), backgroundColor: UIColor.orangeColor())
+        let header = FOOHeader(frame: CGRectMake(0, 0, calendarView.view.frame.size.width, 50.0))
+        header.dateLabel.text = "\(month)" + " " + "\(year)"
+        return header
     }
     
     func PPCalendar(calendar calendarView: PPCalendarView, headerHeightForMonth month: Int, inYear year: Int) -> CGFloat? {
-        return 40.0
+        return 50.0
     }
     
     func PPCalendar(calendar calendarView: PPCalendarView, sizeForCellWithDate date: NSDate) -> CGSize {

@@ -21,6 +21,7 @@
 		9F2410771C9C76B500FAD347 /* FOOCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2410761C9C76B500FAD347 /* FOOCell.swift */; };
 		9F2410791C9C76C400FAD347 /* FOOCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F2410781C9C76C400FAD347 /* FOOCell.xib */; };
 		9F24107B1C9C7BC200FAD347 /* PPCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F24107A1C9C7BC200FAD347 /* PPCalendarCell.swift */; };
+		9F24107D1CA023DE00FAD347 /* FOOHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F24107C1CA023DE00FAD347 /* FOOHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		9F2410761C9C76B500FAD347 /* FOOCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FOOCell.swift; sourceTree = "<group>"; };
 		9F2410781C9C76C400FAD347 /* FOOCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FOOCell.xib; sourceTree = "<group>"; };
 		9F24107A1C9C7BC200FAD347 /* PPCalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPCalendarCell.swift; sourceTree = "<group>"; };
+		9F24107C1CA023DE00FAD347 /* FOOHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FOOHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				9F24104F1C9B62AA00FAD347 /* AppDelegate.swift */,
 				9F2410511C9B62AA00FAD347 /* ViewController.swift */,
+				9F24107C1CA023DE00FAD347 /* FOOHeader.swift */,
 				9F2410761C9C76B500FAD347 /* FOOCell.swift */,
 				9F2410781C9C76C400FAD347 /* FOOCell.xib */,
 				9F2410531C9B62AA00FAD347 /* Main.storyboard */,
@@ -186,6 +189,7 @@
 				9F2410521C9B62AA00FAD347 /* ViewController.swift in Sources */,
 				9F2410501C9B62AA00FAD347 /* AppDelegate.swift in Sources */,
 				9F2410701C9C21FE00FAD347 /* PPCalendarHeader.swift in Sources */,
+				9F24107D1CA023DE00FAD347 /* FOOHeader.swift in Sources */,
 				9F24107B1C9C7BC200FAD347 /* PPCalendarCell.swift in Sources */,
 				9F24106E1C9B6C8000FAD347 /* PPCalendarPage.swift in Sources */,
 				9F24106B1C9B6BAD00FAD347 /* Constants.swift in Sources */,

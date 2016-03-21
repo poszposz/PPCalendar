@@ -3,7 +3,7 @@
 //  PPCalendar
 //
 //  Created by Jan Posz on 17.03.2016.
-//  Copyright © 2016 Woolet. All rights reserved.
+//  Copyright © 2016 Jan Posz. All rights reserved.
 //
 
 import UIKit
@@ -111,6 +111,7 @@ extension PPCalendarPage : UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(pageCollectionViewCellIdentifier, forIndexPath: indexPath) as! PPCalendarCell
+//        cell.backgroundColor = debug_randomColor()
         let indexedDate = calculateDateAtIndexPath(indexPath)
         if let customizedCell = dataSource?.PPPage(customizeCell: cell, withDate: indexedDate) {
             if (indexedDate.month() != currentMonth) {
